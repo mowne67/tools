@@ -59,7 +59,7 @@ button, input { font: inherit; }
 .sheet.open { display: block; }
 
 .hero {
-  position: relative; display: flex; min-height: 770px; align-items: center; flex-direction: column; justify-content: center;
+  position: relative; display: flex; min-height: 600px; align-items: center; flex-direction: column; justify-content: center;
   width: min(1120px, calc(100% - 32px)); margin: 0 auto; padding: 70px 16px 110px; overflow: hidden; text-align: center;
 }
 .hero::before, .hero::after { content: ''; position: absolute; z-index: -1; width: 8px; height: 8px; background: var(--pixel); opacity: .8; }
@@ -131,7 +131,7 @@ button, input { font: inherit; }
   .menu { display: block; }
   .sheet { position: sticky; top: 64px; z-index: 19; width: min(1120px, calc(100% - 32px)); margin: 0 auto; border: 1px solid var(--line); background: var(--surface); }
   .sheet a { display: block; padding: 12px 16px; border-bottom: 1px solid var(--line-soft); text-decoration: none; font-size: 13px; }
-  .hero { min-height: 690px; }
+  .hero { min-height: 560px; }
   .rows { grid-template-columns: 1fr; }
   .row { min-height: 250px; }
   .section-copy { grid-template-columns: 1fr; }
@@ -140,7 +140,7 @@ button, input { font: inherit; }
 @media (max-width: 560px) {
   .nav { gap: 12px; }
   .lock i { font-size: 12px; }
-  .hero { min-height: 620px; padding-bottom: 72px; }
+  .hero { min-height: 520px; padding-bottom: 72px; }
   .hero::before, .hero::after { opacity: .38; }
   .wordmark { margin-top: 48px; font-size: clamp(68px, 23vw, 110px); }
   .lede { font-size: 14px; }
