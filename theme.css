@@ -59,8 +59,8 @@ button, input { font: inherit; }
 .sheet.open { display: block; }
 
 .hero {
-  position: relative; display: flex; min-height: 600px; align-items: center; flex-direction: column; justify-content: center;
-  width: min(1120px, calc(100% - 32px)); margin: 0 auto; padding: 70px 16px 110px; overflow: hidden; text-align: center;
+  position: relative; display: flex; min-height: 440px; align-items: center; flex-direction: column; justify-content: center;
+  width: min(1120px, calc(100% - 32px)); margin: 0 auto; padding: 32px 16px 48px; overflow: hidden; text-align: center;
 }
 .hero::before, .hero::after { content: ''; position: absolute; z-index: -1; width: 8px; height: 8px; background: var(--pixel); opacity: .8; }
 .hero::before {
@@ -74,18 +74,18 @@ button, input { font: inherit; }
 .notice { display: inline-flex; align-items: center; gap: 10px; border: 1px solid color-mix(in srgb, var(--brand) 45%, var(--line)); padding: 7px 12px; color: var(--brand); text-decoration: none; font-size: 12px; }
 .notice:hover { background: color-mix(in srgb, var(--brand) 8%, transparent); }
 .wordmark {
-  margin-top: 62px; color: var(--brand); font-family: var(--sans); font-size: clamp(76px, 15vw, 176px); font-weight: 700;
+  margin-top: 36px; color: var(--brand); font-family: var(--sans); font-size: clamp(76px, 15vw, 176px); font-weight: 700;
   letter-spacing: -.09em; line-height: .8; background: repeating-linear-gradient(0deg, var(--brand) 0 7px, transparent 7px 13px);
   -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
   filter: drop-shadow(14px 0 0 color-mix(in srgb, var(--brand-2) 48%, transparent));
 }
 .lede { max-width: 700px; margin: 62px 0 0; color: var(--muted); font-size: 15px; }
-.go { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 34px; }
+.go { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 24px; }
 .action { display: inline-flex; align-items: center; gap: 14px; min-height: 42px; padding: 8px 16px; border: 1px solid var(--line); background: var(--surface); text-decoration: none; font-size: 13px; font-weight: 600; }
 .action:not(.primary):hover { border-color: var(--brand); color: var(--brand); }
 
 .projects, .fig, .foot { width: min(1120px, calc(100% - 32px)); margin-right: auto; margin-left: auto; }
-.projects { padding: 92px 0 100px; border-top: 1px solid var(--line); }
+.projects { padding: 64px 0 100px; border-top: 1px solid var(--line); }
 .section-copy { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 470px); gap: 18px 80px; margin-bottom: 44px; }
 .kicker { margin: 0; color: var(--brand); font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
 .section-copy .kicker { grid-column: 1 / -1; }
@@ -131,7 +131,7 @@ button, input { font: inherit; }
   .menu { display: block; }
   .sheet { position: sticky; top: 64px; z-index: 19; width: min(1120px, calc(100% - 32px)); margin: 0 auto; border: 1px solid var(--line); background: var(--surface); }
   .sheet a { display: block; padding: 12px 16px; border-bottom: 1px solid var(--line-soft); text-decoration: none; font-size: 13px; }
-  .hero { min-height: 560px; }
+  .hero { min-height: 420px; }
   .rows { grid-template-columns: 1fr; }
   .row { min-height: 250px; }
   .section-copy { grid-template-columns: 1fr; }
@@ -140,13 +140,13 @@ button, input { font: inherit; }
 @media (max-width: 560px) {
   .nav { gap: 12px; }
   .lock i { font-size: 12px; }
-  .hero { min-height: 520px; padding-bottom: 72px; }
+  .hero { min-height: 400px; padding: 28px 16px 44px; }
   .hero::before, .hero::after { opacity: .38; }
-  .wordmark { margin-top: 48px; font-size: clamp(68px, 23vw, 110px); }
+  .wordmark { margin-top: 32px; font-size: clamp(68px, 23vw, 110px); }
   .lede { font-size: 14px; }
   .go { width: 100%; }
   .action { flex: 1 1 100%; justify-content: center; }
-  .projects, .fig { padding-top: 70px; padding-bottom: 76px; }
+  .projects, .fig { padding-top: 48px; padding-bottom: 76px; }
   .fighd { flex-direction: column; gap: 6px; }
   .fighd .r { margin-left: 0; text-align: left; }
   .prose { padding: 28px 22px; }
